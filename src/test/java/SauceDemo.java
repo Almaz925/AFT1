@@ -1,9 +1,12 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class SauceDemo {
-    public static void main(String[] args) {
+
+    @Test
+    public void makeListLocators() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.saucedemo.com/");

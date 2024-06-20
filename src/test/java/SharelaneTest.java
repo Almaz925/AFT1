@@ -7,6 +7,7 @@ import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class SharelaneTest {
+
     @Test
     public void zipCoode4Digits() {
         //1. открыть браузер
@@ -20,6 +21,7 @@ public class SharelaneTest {
         assertEquals(error, "Oops, error on page. ZIP code should have 5 digits");
         browser.quit();
     }
+
     @Test
     public void zipCoode5Digits() {
         //1. открыть браузер
